@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 g_figure = plt.figure()
 ax = g_figure.add_subplot(111)
-
+# 这是存放数据的路径，根据实际路径修改
 g_training_filePath = 'D:\Download\machinelearninginaction\Ch02\\trainingDigits'
 g_test_filePath = 'D:\Download\machinelearninginaction\Ch02\\testDigits'
 
