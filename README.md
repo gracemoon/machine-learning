@@ -3,3 +3,4 @@ This project contains the design and implementation of common machine learning a
 - KNN algorithm
 - Decision Tree
 - Native Bayes
+- Logistic Regression
