@@ -1,4 +1,4 @@
-# 支持向量机（SVM）support vector method
+# 支持向量机（SVM）support vector machines
 # sequential minimal optimization(SMO)最小化序列算法
 # 准备数据
 def set_data():
