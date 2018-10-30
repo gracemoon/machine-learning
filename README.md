@@ -5,3 +5,4 @@ This project contains the design and implementation of common machine learning a
 - Native Bayes
 - Logistic Regression
 - Support Vector Machines
+- AdaBoost algorithm
