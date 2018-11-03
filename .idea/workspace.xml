@@ -15,21 +15,23 @@
     <SUITE FILE_PATH="coverage/machine_learning$SVM.coverage" NAME="SVM Coverage Results" MODIFIED="1540914485364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/machine_learning$DecisionTree.coverage" NAME="DecisionTree Coverage Results" MODIFIED="1540799554000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/machine_learning$svmMLiA.coverage" NAME="svmMLiA Coverage Results" MODIFIED="1540914313663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/Download/machinelearninginaction/Ch06" />
+    <SUITE FILE_PATH="coverage/machine_learning$AdaBoost.coverage" NAME="AdaBoost Coverage Results" MODIFIED="1541253364159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/machine_learning$LogisticRegress.coverage" NAME="LogisticRegress Coverage Results" MODIFIED="1540806915478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1831630582">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.46" value="1" />
-          <entry key="project.open.time.47" value="1" />
+          <entry key="project.open.time.47" value="2" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.58" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -48,7 +50,7 @@
         <counts>
           <entry key="Python Console" value="16" />
           <entry key="md" value="124" />
-          <entry key="py" value="9021" />
+          <entry key="py" value="11385" />
           <entry key="txt" value="22" />
         </counts>
       </usages-collector>
@@ -56,7 +58,7 @@
         <counts>
           <entry key="Markdown" value="124" />
           <entry key="PLAIN_TEXT" value="22" />
-          <entry key="Python" value="9037" />
+          <entry key="Python" value="11401" />
         </counts>
       </usages-collector>
     </session>
@@ -82,14 +84,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AdaBoost.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="83">
+              <caret line="131" selection-start-line="131" selection-end-line="131" />
               <folding>
-                <marker date="1541083872169" expanded="true" signature="23:60" ph="..." />
-                <marker date="1541083872169" expanded="true" signature="98:135" ph="..." />
-                <marker date="1541083872169" expanded="true" signature="156:193" ph="..." />
-                <marker date="1541083872169" expanded="true" signature="229:266" ph="..." />
-                <marker date="1541083872169" expanded="true" signature="302:303" ph="..." />
+                <element signature="e#0#11#0" expanded="true" />
+                <marker date="1541253235746" expanded="true" signature="173:1119" ph="..." />
+                <marker date="1541253235746" expanded="true" signature="1000:1110" ph="..." />
+                <marker date="1541253235746" expanded="true" signature="1193:2355" ph="..." />
+                <marker date="1541253235746" expanded="true" signature="2397:2803" ph="..." />
+                <marker date="1541253235746" expanded="true" signature="4275:4293" ph="..." />
+                <marker date="1541253235746" expanded="true" signature="4318:4539" ph="..." />
+                <marker date="1541253235746" expanded="true" signature="4555:4560" ph="..." />
               </folding>
             </state>
           </provider>
@@ -179,7 +184,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,6 +195,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -212,7 +217,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.SVM">
+  <component name="RunManager" selected="Python.AdaBoost">
+    <configuration name="AdaBoost" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="machine-learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdaBoost.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="DecisionTree" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="machine-learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -306,9 +333,11 @@
       <item itemvalue="Python.LogisticRegress" />
       <item itemvalue="Python.SVM" />
       <item itemvalue="Python.svmMLiA" />
+      <item itemvalue="Python.AdaBoost" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.AdaBoost" />
         <item itemvalue="Python.SVM" />
         <item itemvalue="Python.svmMLiA" />
         <item itemvalue="Python.LogisticRegress" />
@@ -341,13 +370,13 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49863762" visible="true" weight="0.19288956" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49863762" visible="true" weight="0.19894099" />
       <window_info id="Structure" order="1" sideWeight="0.5013624" side_tool="true" weight="0.18154311" />
       <window_info id="Favorites" order="2" sideWeight="0.5013624" side_tool="true" weight="0.18154311" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.40065682" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.38423645" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.5073892" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -414,6 +443,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/Download/machinelearninginaction/Ch06/svmMLiA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="45" column="93" selection-start-line="45" selection-start-column="93" selection-end-line="45" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="133">
+            <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SVM.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2375">
@@ -425,10 +471,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Download/machinelearninginaction/Ch06/svmMLiA.py">
+    <entry file="file://$PROJECT_DIR$/DecisionTree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="45" column="93" selection-start-line="45" selection-start-column="93" selection-end-line="45" selection-end-column="93" />
+        <state relative-caret-position="57">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -452,36 +501,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="133">
-            <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DecisionTree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AdaBoost.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        <state relative-caret-position="83">
+          <caret line="131" selection-start-line="131" selection-end-line="131" />
           <folding>
-            <marker date="1541083872169" expanded="true" signature="23:60" ph="..." />
-            <marker date="1541083872169" expanded="true" signature="98:135" ph="..." />
-            <marker date="1541083872169" expanded="true" signature="156:193" ph="..." />
-            <marker date="1541083872169" expanded="true" signature="229:266" ph="..." />
-            <marker date="1541083872169" expanded="true" signature="302:303" ph="..." />
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1541253235746" expanded="true" signature="173:1119" ph="..." />
+            <marker date="1541253235746" expanded="true" signature="1000:1110" ph="..." />
+            <marker date="1541253235746" expanded="true" signature="1193:2355" ph="..." />
+            <marker date="1541253235746" expanded="true" signature="2397:2803" ph="..." />
+            <marker date="1541253235746" expanded="true" signature="4275:4293" ph="..." />
+            <marker date="1541253235746" expanded="true" signature="4318:4539" ph="..." />
+            <marker date="1541253235746" expanded="true" signature="4555:4560" ph="..." />
           </folding>
         </state>
       </provider>
