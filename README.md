@@ -6,3 +6,4 @@ This project contains the design and implementation of common machine learning a
 - Logistic Regression
 - Support Vector Machines
 - AdaBoost algorithm
+- K-means clustering algorithm
