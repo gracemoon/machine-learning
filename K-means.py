@@ -1,5 +1,6 @@
 import copy
 import random
+import matplotlib.pyplot as plot
 
 # 准备数据
 file_path = 'D:\Download\machinelearninginaction\Ch10\\testSet.txt'
@@ -49,14 +50,14 @@ def distince(dataset, martix):
 def choose_cluster(martix):
     result = []
     temp = []
-    for k in range(len(martix)):
-        temp.append(martix[k][0])
+    for k in range(len(martix[0])):
+        temp.append(martix[0][k])
     for m in range(len(martix[0])):
         result.append(0)
     for i in range(len(martix[0])):
         for j in range(len(martix)):
-            if martix[j][i] < temp[j]:
-                temp[j] = martix[j][i]
+            if martix[j][i] < temp[i]:
+                temp[i] = martix[j][i]
                 result[i] = j
     return result
 
@@ -132,10 +133,54 @@ def k_means(dataset, num):
     return init_nodes, clusters
 
 
+# 绘制结果图
+def plot_cord(dataset, clusters, n, centroids):
+    cordinate = []
+    for i in range(n):
+        cordinate.append([])
+    for j in range(len(clusters)):
+        cordinate[clusters[j]].append(dataset[j])
+    figure = plot.figure()
+    ax = figure.add_subplot(111)
+    cord_x1 = []
+    cord_x2 = []
+    cord_x3 = []
+    cord_x4 = []
+    cord_y1 = []
+    cord_y2 = []
+    cord_y3 = []
+    cord_y4 = []
+    for k in range(len(cordinate[0])):
+        cord_x1.append(cordinate[0][k][0])
+        cord_y1.append(cordinate[0][k][1])
+    for k in range(len(cordinate[1])):
+        cord_x2.append(cordinate[1][k][0])
+        cord_y2.append(cordinate[1][k][1])
+    for k in range(len(cordinate[2])):
+        cord_x3.append(cordinate[2][k][0])
+        cord_y3.append(cordinate[2][k][1])
+    for k in range(len(cordinate[3])):
+        cord_x4.append(cordinate[3][k][0])
+        cord_y4.append(cordinate[3][k][1])
+    centroid_x = []
+    centroid_y = []
+    for k in range(len(centroids)):
+        centroid_x.append(centroids[k][0])
+        centroid_y.append(centroids[k][1])
+    ax.scatter(cord_x1, cord_y1, s=30, c='red')
+    ax.scatter(cord_x2, cord_y2, s=30, c='green')
+    ax.scatter(cord_x3, cord_y3, s=30, c='yellow')
+    ax.scatter(cord_x4, cord_y4, s=30, c='blue')
+    ax.scatter(centroid_x, centroid_y, s=30, c='black')
+    plot.show()
+
+
 def test():
     cluster_num = 4
     test_dataset = un_labels_data(file_path)
-    print(k_means(test_dataset, cluster_num))
-    
+    # print(k_means(test_dataset, cluster_num))
+    test_centroid, clusters = k_means(test_dataset, cluster_num)
+    plot_cord(test_dataset, clusters, cluster_num, test_centroid)
+
 
 test()
