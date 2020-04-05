@@ -21,7 +21,6 @@ def extract_attribute(vector):
                 martix[index][1].append(i)
     return martix
 
-
 # 朴素贝叶斯算法实现
 def native_bayes(martix, labels):
     result = extract_attribute(labels)
@@ -75,6 +74,38 @@ def classification(machine, dateset):
 
 
 # 测试
-g_martix = [
-    [],
-]
+
+import numpy as np 
+import pandas as pd
+from sklearn.model_selection import train_test_split
+# 加载数据
+from sklearn.datasets import load_digits
+digits = load_digits()
+print(digits.data.shape)
+
+# 数据划分 
+train_data,test_data,train_label,test_label=train_test_split(digits.data,digits.target,test_size=0.3)
+
+# 创建模型
+from sklearn.naive_bayes import GaussianNB
+model=GaussianNB()
+model.fit(train_data,train_label)
+
+
+# 测试集准确率
+acc=model.score(test_data,test_label)
+print(acc)
+
+# 类型预测
+y_prob=model.predict_proba(test_data)
+print(y_prob[:20])
+print(np.argmax(y_prob,axis=1))
+y_hat=model.predict(test_data)
+print(y_hat)
+
+
+from sklearn.metrics import confusion_matrix as cm
+
+print(cm(test_label,y_hat))
+
+
